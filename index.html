@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="iconsite.png" type="image/png" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" />
+
+    <title>Kaio's Professional Website</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-size: 22px;
+        display: flex;
+      }
+
+      aside {
+        width: 250px;
+        background-color: #315148;
+        color: rgb(255, 255, 255);
+        height: 100vh;
+        padding: 20px 10px;
+      }
+
+      aside img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      aside button {
+        background: none;
+        border: none;
+        color: white;
+        text-align: left;
+        width: 100%;
+        font-size: 16px;
+        margin: 10px 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+      }
+
+      aside button:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        padding: 30px;
+        flex: 1;
+      }
+
+      .section {
+        display: none;
+      }
+
+      .section.active {
+        display: block;
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 18px;
+        padding: 0px;
+        cursor: pointer;
+        line-height: 1.0;
+        transition: transform 1.5s;
+      }
+
+      button:hover {
+        background-color: #263934;
+        color: #ffffff;
+        border-color: #dd6afa;
+        transform: translateX(4px) scale(0.96);
+        transition: background 0.5s;
+        border-radius: 10px;
+      }
+
+      button .icon {
+        width: 30px;
+        height: 23px;
+        vertical-align: middle;
+        object-fit: contain;
+        margin-top: 15px;
+      }
+
+      .telImag,
+      .emailImag,
+      .linkedin,
+      .github {
+        width: 28px;
+        color: white;
+        text-align: left;
+        font-size: 16px;
+        cursor: pointer;
+        align-items: center;
+        margin-top: 15px;
+      }
+
+      .telImag {
+        margin-top: 30px;
+      }
+
+      #contact {
+        text-align: left;
+      }
+
+      .cabe {
+        text-align: center;
+      }
+
+      .alinhamento1 {
+        margin-left: 500px;
+      }
+
+      .alinhamento2 {
+        margin-left: 460px;
+      }
+
+      .languageform {
+        background-color: rgba(74, 75, 74, 0.214);
+        width: 80px;
+        border-radius: 10px;
+        font-size: 30px;
+        color: #000000;
+        text-align: center;
+      }
+
+      .texttt {
+        font-size: 25px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <aside>
+      <img src="FOTO EDITADA MINHA.png" alt="Foto de Perfil" />
+
+      <button onclick="showSection('letter')">
+        <img src="jornal.png" alt="Profile Icon" class="icon" />
+        Presentation Letter
+      </button>
+
+      <button onclick="showSection('objective')">
+        <img src="mala-de-viagem.png" alt="Profile Icon" class="icon" />
+        Career Objective
+      </button>
+
+      <button onclick="showSection('experience')">
+        <img src="pasta.png" alt="Profile Icon" class="icon" />
+        Professional Experience
+      </button>
+
+      <button onclick="showSection('education')">
+        <img src="educacao.png" alt="Profile Icon" class="icon" />
+        Education
+      </button>
+
+      <button onclick="showSection('languages')">
+        <img src="idioma.png" alt="Profile Icon" class="icon" />
+        Languages
+      </button>
+
+      <button onclick="showSection('contact')">
+        <img src="carta.png" alt="Profile Icon" class="icon" />
+        Contact Info
+      </button>
+    </aside>
+
+    <main>
+      <div id="profile" class="section active">
+        <h2>Profile</h2>
+        <p>Coloque aqui um resumo sobre você.</p>
+      </div>
+
+      <div id="letter" class="section">
+        <h2>Presentation Letter</h2>
+ <p>
+      I am a technology-driven professional with a strong foundation in software development and systems integration, particularly across back-end, cloud, and automation environments. My experience spans scripting and data engineering with <strong>Python</strong>, designing and optimizing <strong>SQL/PostgreSQL</strong> databases, and building enterprise-level services using <strong>C# and .NET</strong>.
+      <br><br>
+      I have contributed to full-stack solutions, combining <strong>HTML, CSS, and JavaScript</strong> fundamentals with <strong>Node.js</strong> for RESTful API development, always with an emphasis on scalability and clean data flow. My work with <strong>Java</strong> has further refined my skills in object-oriented programming and application logic, while <strong>GCP</strong> has been a valuable platform for managing cloud infrastructure, working with <strong>BigQuery</strong>, and deploying robust services.
+      <br><br>
+  Currently, I am expanding my expertise in <strong>AI automation</strong>, exploring how machine learning can power complex, real-world orchestration systems. I am also diving into <strong>Kotlin</strong> to broaden my capabilities in mobile development, alongside deepening my command of <strong>Git</strong> and collaborative workflows such as <strong>GitFlow</strong>.
+  <br><br>
+  I am passionate about solving real-world problems through clean architecture, efficient code, and meaningful automation. I am seeking opportunities where I can contribute to innovative teams, continuously grow, and deliver reliable technical solutions.
+  <br><br>
+  Thank you for considering my profile. I would welcome the opportunity to discuss how my background and current focus areas can align with your team's goals.
+  </p>
+      </div>
+
+      <div id="objective" class="section">
+        <h2>Career Objective</h2>
+          <p>
+            I aim to evolve as a technology professional by deepening my knowledge in <strong>back-end development</strong> and <strong>data analysis</strong>, with the long-term goal of becoming a <strong>senior-level engineer</strong> in these areas. I seek to work in environments that challenge my skills in <strong>Python</strong>, <strong>SQL/PostgreSQL</strong>, and cloud platforms like <strong>GCP</strong>, while allowing me to contribute to <strong>scalable architectures</strong>, <strong>robust APIs</strong>, and intelligent <strong>data-driven systems</strong>.
+            <br><br>
+            My current focus is on mastering <strong>clean back-end logic</strong>, <strong>automation pipelines</strong>, and <strong>efficient data processing strategies</strong> — all of which I consider essential to building impactful, modern software solutions. I am driven by <strong>continuous learning</strong>, <strong>team collaboration</strong>, and the desire to turn complex technical challenges into structured, high-quality solutions.
+          </p>
+      </div>
+
+      <div id="experience" class="section">
+        <h2>Professional Experience</h2>
+        <p>
+          <div class="languageform">2020:</div>
+          <div class="texttt">Concentrix Brasil</div>
+          <br /><br />
+          <div class="languageform">2022:</div>
+          <div class="texttt">Conecta Trade</div>
+          <br /><br />
+          <div class="languageform">2023:</div>
+          <div class="texttt">Mc1 Tecnologia LTDA (current job)</div>
+          <br /><br />
+        </p>
+      </div>
+
+      <div id="education" class="section">
+        <h2>Education</h2>
+        <ul>
+          <li>Human Resources - UNINOVE - COMPLETE IN 2020</li>
+          <li>Postgree Advanced - Udemy</li>
+          <li>Data Analisis - Alura - Complete in 2024</li>
+          <li>Software Analysis - UNINOVE - WILL COMPLETE IN 2025</li>
+        </ul>
+      </div>
+
+      <div id="languages" class="section">
+        <h2>Languages</h2>
+        <p>
+          <li>Portuguese</li>
+          Proficiency: Native
+          <br /><br />
+          <li>Spanish</li>
+          Proficiency: Advanced
+          <br /><br />
+          <li>English</li>
+          Proficiency: Advanced
+          <br /><br />
+        </p>
+      </div>
+
+      <div id="contact" class="section">
+        <h2 class="cabe">Contact Info</h2>
+        <p>
+          <div class="alinhamento1">
+            <img src="bolha-de-bate-papo.png" alt="Profile Icon" class="telImag" />
+            +55 (11) 99933-0451
+            <br /><br />
+            <img src="carta.png" alt="Profile Icon" class="emailImag" />
+            kaiolam3100@gmail.com
+            <br /><br />
+          </div>
+        </p>
+
+        <h3 class="cabe">Links</h3>
+        <p>
+          <div class="alinhamento2">
+            <img src="linkedin.png" alt="LinkedIn Icon" class="linkedin" />
+            <a href="https://www.linkedin.com/in/kaiolam3100" target="_blank">www.linkedin.com/in/kaiolam3100</a>
+            <br /><br />
+            <img src="github.png" alt="GitHub Icon" class="github" />
+            <a href="https://github.com/kaiolam3100" target="_blank">https://github.com/kaiolam3100</a>
+          </div>
+        </p>
+      </div>
+    </main>
+
+    <script>
+      function showSection(id) {
+        document.querySelectorAll('.section').forEach(section => {
+          section.classList.remove('active');
+        });
+        document.getElementById(id).classList.add('active');
+      }
+    </script>
+  </body>
+</html>
